@@ -1,0 +1,116 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+
+/* Global Styles */
+body {
+  background: #f5f5f5;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+input, input:focus, 
+select, select:focus, 
+textarea, :focus, 
+button, button:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+  list-style-position: inside;
+}
+
+/* Transparent navbar style */
+.navbar {
+  background-color: transparent !important;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+
+.navbar-brand, .nav-link {
+  color: white !important; 
+  letter-spacing: 0.03rem;
+}
+
+.btn-menu {
+  cursor: pointer;
+}
+
+
+/* Hero section Style */
+.hero--section {
+  background: url("./images/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 800px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+/* Call to action button */
+.cta--btn {
+  padding: 0.5rem 3rem;
+  margin-top: 1rem;
+  background-color: #013868 !important;
+  font-weight: 600;
+}
+
+.cta--btn:hover {
+  background: transparent  !important;
+  border: 2px solid white;
+}
+
+
+.contact--us {
+  background: linear-gradient( 68.6deg,  rgba(241,237,254) 14.4%, rgba(251,219,222) 92.7% );
+}
+
+.contact--container {
+  gap: 4rem;
+}
+
+.form--box {
+  flex: 1;
+  background: linear-gradient(rgba(72, 6, 179, 0.2), rgba(31, 27, 87, 0.2));
+  padding: 2rem;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.image--box {
+  flex: 1;
+  /* width: 200px; */
+  background-image: url('./images/contactus.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; 
+  border-radius: 20px;
+}
+
+.contact--us textarea {
+  resize: none;
+}
